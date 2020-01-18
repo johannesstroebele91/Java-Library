@@ -1,4 +1,4 @@
-# Java_Knowledge
+# Java Knowledge
 
 In this project, I collect and categorize the knowledge I obtain during my studies of Java.
 The goal is to have a perfect explanation at hand, in case I forgot something. 
