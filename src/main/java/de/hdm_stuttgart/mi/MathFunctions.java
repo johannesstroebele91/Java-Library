@@ -17,8 +17,10 @@ public class MathFunctions {
         double PI; // value of π
 
         // Math.abs() -> Betrag: damit auf jedenfall Differenz gebildet wird
+        System.out.println("Math.abs(b) " + Math.abs(a) );
         System.out.println("Math.abs(a-b) " + Math.abs(a-b) );
         System.out.println("Dasselbe Ergebnis bei Math.abs(b-a) " + Math.abs(b-a) );
+
 
         // Math.max()
         System.out.println( "Math.max(a,b)" + Math.max(a, b));

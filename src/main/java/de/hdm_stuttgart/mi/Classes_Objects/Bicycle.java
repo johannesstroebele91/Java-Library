@@ -5,8 +5,9 @@ import java.util.Objects;
 public class Bicycle {
 
     /** STRUCTURE
-     * Class variables / Instance variables
-     * Class methods / Member variables
+     * Class/Instance variables
+     * Class methods
+     * Static variables
      * Constructor
      * Getter & Setter
      * toString()
@@ -21,14 +22,16 @@ public class Bicycle {
 
     // Static instance variable
     // -> independent from number of objects!
-    private static int numberOfBicycles = 0;
+    static private int numberOfBicycles = 0;
 
     // Class method to return the ID instance variable
     public int getID() {
         return id;
     }
 
-    // CONSTRUCTOR
+    // https://www.geeksforgeeks.org/polymorphism-in-java/
+
+    // CONSTRUCTOR (always a overloaded Method if multiple ones)
     // No-Args-Constructor
     public Bicycle() {}
 
@@ -42,7 +45,7 @@ public class Bicycle {
         // increment number of Bicycles
         // and assign ID number
         // every time a new bicycle gets added
-        id = ++numberOfBicycles;
+        ++numberOfBicycles;
     }
 
 
@@ -104,20 +107,6 @@ public class Bicycle {
                 speed == bicycle.speed &&
                 cadence == bicycle.cadence &&
                 id == bicycle.id;
-    }
-
-
-    // METHOD OVERLOADING
-    public int rideBicycle(){
-        return speed; // Access class variables in methods
-    }
-
-    public int rideBicycle(int travelTime){
-        return travelTime*speed; // Access class variables in methods
-    }
-
-    public double rideBicycle(double travelTime, int travelDistance){
-        return travelTime*travelDistance*speed; // Access class variables in methods
     }
 
 

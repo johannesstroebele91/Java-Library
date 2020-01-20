@@ -5,7 +5,7 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        /** STRUCTURE
+        /* STRUCTURE
          * Objects, Class variables and methods
          * Static variables and methods
          * Method overloading
@@ -28,10 +28,5 @@ public class Driver {
         // System.out.println("There are " + numberOfBicycles.num() + " bicycles"); // compile error, due to "numberOfBicycles" being "private"
         // 2) Private: Calling a static method
         System.out.println("There are " + Bicycle.getNumberOfBicycles() + " bicycles");
-
-        // Call overloaded methods
-        System.out.println( bicycleRed.rideBicycle() );
-        System.out.println( bicycleRed.rideBicycle(3) ); // 3.23 not possible, because int and no double
-        System.out.println( bicycleRed.rideBicycle(3.23, 5) );
     }
 }
