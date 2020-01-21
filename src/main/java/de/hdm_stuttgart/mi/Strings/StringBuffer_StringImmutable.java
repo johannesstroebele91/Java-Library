@@ -9,7 +9,7 @@ public class StringBuffer_StringImmutable {
         // b) Aber StringBuffer ermöglicht eine Veränderung
 
 
-        // a) normale Strings
+        // a) Normale Strings
         // 1. String wird auf dem Heap zuerst ohne Pointer erstellt und wird Reference zugewiesen
         String a ="hello";
         System.out.println(a);
@@ -30,7 +30,9 @@ public class StringBuffer_StringImmutable {
 
         System.out.println(s);
 
-        // Here we can append all the strings created with StringBuffer
+        // Append()
+        // Super useful function
+        // Append allows to add a string to another string
         s.append(", world ...");
         r.append(" I'm doing great.");
         t.append(" Sarah");
