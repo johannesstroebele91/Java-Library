@@ -2,7 +2,7 @@ package de.hdm_stuttgart.mi.JavaMemoryManagement;
 
 import java.util.Scanner;
 
-public class JavaMemoryManagement {
+public class HeapVsStack {
 
     public static void main(String[] args) {
 
@@ -37,8 +37,9 @@ public class JavaMemoryManagement {
          *
          * WARNING: If there is no more heap space for creating an object,
          * JVM will throw java.lang.OutOfMemoryError
-         *
-         */// Examples:
+         */
+
+        // Examples:
         int[] numbers = {1,2,3}; // Array-Objects are storied on the Heap, but its reference on the Stack
         Scanner sc = new Scanner(System.in); // Imported Class Objects are stored on the Heap, but its reference on the Stack
         Rectangle rectangleSmall = new Rectangle(2,3); // Self-Created objects are stored on the Heap, but its reference on the Stack

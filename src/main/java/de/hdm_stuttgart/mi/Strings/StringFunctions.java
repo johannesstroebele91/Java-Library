@@ -1,6 +1,6 @@
 package de.hdm_stuttgart.mi.Strings;
 
-public class ImportantFunctions {
+public class StringFunctions {
 
     public static void main(String[] args) {
 

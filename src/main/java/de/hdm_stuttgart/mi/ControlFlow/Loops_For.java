@@ -5,12 +5,15 @@ public class Loops_For {
     public static void main(String[] args) {
 
         // For
+        // Warning: index starts at 0
+        // length starts at 1
         String[] stringArray = new String[]{"hello", "world"};
         for (int i = 0; i < stringArray.length; i++) {
             System.out.println(stringArray[i]);
         }
 
-        // For-each: Warning: VALUE! not index
+        // For-each:
+        // Warning: VALUE! not Index
         System.out.println("\nFor-each?");
         for (String s : stringArray) {
             System.out.println(s);
