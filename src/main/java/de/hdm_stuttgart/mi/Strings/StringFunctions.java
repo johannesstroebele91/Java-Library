@@ -26,6 +26,12 @@ public class StringFunctions {
         String[] arrOfStr2 = str.split("@", 3);
         System.out.println(arrOfStr2[0] + " " + arrOfStr2[1] + " " + arrOfStr2[2]); // index 3 is out of bounds, because only 3 words splitted
 
+        // .contain()
+        // https://www.geeksforgeeks.org/java-string-contains-method-example/
+        String links = "hello";
+        String rechts = "hello world";
+        System.out.println(links.contains(rechts));
+
         // String.format
         double d = 4.298238;
         System.out.println( "String.format(\"%.2f\", c)" + String.format("%.2f", d)); // nur Format
