@@ -8,7 +8,13 @@ public class Arr {
          * Array consists of array elements
          * Element access by index value
          * Holding either primitive types or object references
+         *
+         * Tipps
+         * Arrays' length CANNOT be changed
+         * BUT the existing elements CAN be changed
+         * AND the order of the elements
          */
+
 
         // INITIALIZATION
         // 1) Way: short 1-step-assignment

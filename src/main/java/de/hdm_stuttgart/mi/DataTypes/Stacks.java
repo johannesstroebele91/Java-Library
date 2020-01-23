@@ -1,8 +1,7 @@
 package de.hdm_stuttgart.mi.DataTypes;
 
-import java.util.Stack;
 
-public class Stack_DataType {
+public class Stacks {
 
     public static void main(String[] args) {
 

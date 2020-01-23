@@ -10,8 +10,8 @@ import org.apache.logging.log4j.Logger;
  * and A1.log containing debugging output.
  */
 
-public class DoubleValues {
-    private static Logger log = LogManager.getLogger(DoubleValues.class);
+public class SpecialCase_Double {
+    private static Logger log = LogManager.getLogger(SpecialCase_Double.class);
 
     /**
      * The application's main entry point

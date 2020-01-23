@@ -1,8 +1,16 @@
 package de.hdm_stuttgart.mi.Testing;
 
-public class GeneralValues {
+public class Tests {
 
     public static void main(String[] args) {
+
+        /* Types of tests
+         * Unit test: Test individual methods, classes and packages in isolation.
+         * Integration Test: Test a group of associated components/classes.
+         * Acceptance / Functional Test: Operate on a fully integrated system, testing against the user interface.
+         * Regression Test: Ensure system integrity after (implementation) change.
+         * Load test: Responsiveness vs. system load.
+         */
 
         /* Tips for testing
          * Always check for null, 0, and negative values!

@@ -15,6 +15,8 @@ public class MathFunctions {
         // Constant Math Field Values
         double e; // value of e (constant)
         double PI; // value of π
+        double radius = 5.39;
+        System.out.println("A circle of radius " + radius + " will cover an area of " + (float)(Math.round(Math.PI * radius * radius*100))/100);
 
         // Math.abs() -> Betrag: damit auf jedenfall Differenz gebildet wird
         System.out.println("Math.abs(b) " + Math.abs(a) );

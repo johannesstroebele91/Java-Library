@@ -36,8 +36,9 @@ public class Sorting {
     // 1) Ascending sorting with Arrays.sort()
     static public void sortAscending(int[] arr) {
         if(arr.length == 1 || arr.length == 0)
-            return;
+            System.out.println("The array is too short for sorting");
         else {
+            // int[] arrNew = Arrays.sort(values); // Wrong!!! next line for solution
             Arrays.sort(arr);
             System.out.println("Array in ascending order: " + Arrays.toString(arr));
         }
@@ -76,7 +77,7 @@ public class Sorting {
     }
 
     public static void print(int[] arr){
-        System.out.println("Array:\nMaximum value is " + Arrays.stream(arr).max().getAsInt() + " and length is " + arr.length);
+        System.out.println("Array:\nMaximum value is " + Arrays.stream(arr).max() + " and length is " + arr.length);
         sortAscending(arr);
         sortDescendingCollections(arr);
         sortDescendingManually(arr);

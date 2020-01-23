@@ -7,8 +7,13 @@ public class Strings {
         /* 1) Strings created in the STRING POOL
          * Java has a pool in the heap where it stores all Strings
          * If a new one is created, it checks if its already in the pool or adds it
+         *
+         * Tipps
+         * Strings' length CAN be changed
+         * AND the existing elements CAN be changed
          */
         String s1 = "Hello";
+        s1 = "This String CAN have a length greater than its initial length and CAN change its contend";
 
         // https://freedocs.mi.hdm-stuttgart.de/sw1ChapterCoreClasses.html#6
 

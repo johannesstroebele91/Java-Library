@@ -1,6 +1,6 @@
 package de.hdm_stuttgart.mi.Casting;
 
-public class IntToString {
+public class IntToString_Char {
 
     public static void main(String[] args) {
 
@@ -28,6 +28,9 @@ public class IntToString {
         b = Integer.toString(a);
         System.out.println("Casting int into String: " +b + "\n");
 
+        // Int to char
+        char c = (char) a;
+        System.out.println( "Casting int to char " + c);
 
     }
 }

@@ -32,6 +32,10 @@ public class StringFunctions {
         String rechts = "hello world";
         System.out.println(links.contains(rechts));
 
+        // .replace() ' ' with '_'
+        System.out.println( "rechts.replace(' ', '_') -> " + rechts);
+        rechts = rechts.replace(' ', '_');
+        System.out.println( "rechts.replace(' ', '_') -> " + rechts);
         // String.format
         double d = 4.298238;
         System.out.println( "String.format(\"%.2f\", c)" + String.format("%.2f", d)); // nur Format
