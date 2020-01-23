@@ -7,7 +7,7 @@ public class NumberToNumber {
 
     public static void main(String[] args) {
 
-        /** Structure
+        /* Structure
          * Normal castings
          * Special cases
          * ARRAYS
@@ -36,9 +36,9 @@ public class NumberToNumber {
         System.out.println("i carrying int:" + i);
 
         // SPECIAL CASES
-        // Attention for Division of 2 int values !!! 8 / 9
-        System.out.println(8 / 9); // WRONG: Output 1 -> 2 int -> result is an int
-        System.out.println(8 / 9.0); // CORRECT: 0.8888
+        // Attention for Division of 2 int values !!! 8 / 9 -> result is also an int!
+        System.out.println( "8/9 = " + 8 / 9); // WRONG: Output 0 -> not a decimal number AND 0.888 should be rounded to 1, not to 0!
+        System.out.println( "8/9.0 = " + 8 / 9.0); // CORRECT: 0.8888 -> because 9.0 is a double -> therefore double result
 
         // 4.0 is NOT float, but double!
         // float a = 4.0; // compile error -> 4.0 is NOT float, but double!
