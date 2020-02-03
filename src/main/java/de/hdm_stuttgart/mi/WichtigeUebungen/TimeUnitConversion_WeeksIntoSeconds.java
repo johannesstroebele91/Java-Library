@@ -1,4 +1,4 @@
-package de.hdm_stuttgart.mi.Uebungen;
+package de.hdm_stuttgart.mi.WichtigeUebungen;
 
 public class TimeUnitConversion_WeeksIntoSeconds {
     public static void main(String[] args) {

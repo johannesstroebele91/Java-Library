@@ -34,5 +34,19 @@ public class CompoundAssignment {
         age %= 2;
         System.out.println("age += 2: " + age);
 
+        // Special case
+        int a = 6,
+            b = 7,
+            c = -3,
+            result = 0;
+
+
+        // result += ++a - b++ + --c; // schlecht geschrieben
+
+        ++a; // Incrementing ++a happens prior
+        --c; // decrementing --c happens prior
+        result += a - b + c; // or even: result = result + a - b + c;
+        b++; // b-- in contrast happens after
+
     }
 }
