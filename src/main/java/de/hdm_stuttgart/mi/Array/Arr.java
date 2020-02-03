@@ -1,5 +1,7 @@
 package de.hdm_stuttgart.mi.Array;
 
+import java.util.Arrays;
+
 public class Arr {
 
     public static void main(String[] args) {
@@ -48,11 +50,22 @@ public class Arr {
         // numbers1[numbers1.length] = 5; // WRONG! Index 3 out of bounds for length 3
         // numbers1[3] = 5; // Also wrong see above
         numbers1[2] = 5; // RIGHT
+
+        // Print or return NEWLY created array "return (new int[] {1,5,4,3}) "
+        System.out.println(Arrays.toString( new int[] {1,2,4} ));
+        System.out.println(Arrays.toString( change( new int[] {1,2,4,5,3} )));
+
     }
 
     static private void fill(final int[] lectures, final int participants){
         // Array lectures on the heap gets filled with values
         for(int i = 0; i<lectures.length;i++)
             lectures[i] = participants;
+    }
+
+    static private int[] change(int [] numbers){
+        System.out.println(Arrays.toString(numbers));
+        // Return newly created array
+        return new int[] {1,5,4,3};
     }
 }
