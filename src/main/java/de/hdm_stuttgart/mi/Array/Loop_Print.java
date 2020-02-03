@@ -24,11 +24,21 @@ public class Loop_Print {
         }
 
         // PRINT
+
         // Examples from: https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array
         double[] doubleArray = { 7.0, 9.0, 5.0, 1.0, 3.0 };
+        String[] s = {"a", "123", "asd"};
+
+        // WICHTIG!!!!!
+        // Für primitive Datentypen geht immer .toString()
+        // Für reference Datentypen geht immer Arrays.to
+        System.out.println(Arrays.toString(doubleArray));
+        System.out.println(Arrays.toString(s));
+        // System.out.println(s.toString()); // printed die reference!
+
 
         // 1) Simplest solution for 1-dimensional Array
-        System.out.println(java.util.Arrays.toString(doubleArray));
+        System.out.println(Arrays.toString(doubleArray));
 
         // 2) Simplest solution for 1-dimensional Array
         for(double i: doubleArray)

@@ -14,7 +14,19 @@ public class CopyArrayToOther {
         System.out.println( Arrays.toString( take(arr, 3 ) ));
         System.out.println( Arrays.toString( take2(arr, 3 ) ));
 
+        String[] s = {"a", "b", "c"};
+
+        System.out.println( "\naddArray(s, \"hello\")" + addArray(s, "hello").toString());
     }
+    static private String[] addArray(String[] array, String a){
+        if(array==null){
+            return new String[]{a};
+        }
+        String[] result = Arrays.copyOf(array, array.length+1); // erstellt einen neuen String mit length + 1
+        result[result.length-1]= a; // weißt diesem neuen Index den neuen String zu
+        return result;
+    }
+
 
     // Manuel Solution
     public static int[] take(int[] arr, int n) {

@@ -6,7 +6,9 @@ public class Print {
 
         int i = 2;
         double j = 2.53;
-        System.out.println("No argument");
+        System.out.print( "print() -> Inserts NO!!! new line after printing ");
+        System.out.println( "println() -> Inserts a new line after printing");
+
         System.out.println("int value " + i);
         System.out.println("Two int values "+ i + " and " + j);
 

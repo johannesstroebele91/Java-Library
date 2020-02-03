@@ -43,8 +43,14 @@ public class MathFunctions {
 
         // Math.random()
         double randomNumber = Math.random(); // Random number is always double
-        System.out.println( "Math.random() " + Math.random() );
-        // Generate random numbers within 1 to 10
+        System.out.println( "Math.random() " + Math.random() ); // Output: 0.053428923789123
+
+        // Creating a random value between 0 and 10 (inclusive)
+        // 1) Short solution using  "Random Class"
+        int randomValue =  new Random().nextInt(10); //
+        System.out.println("int randomValue =  new Random().nextInt(10) " + randomValue);
+
+        // 2) Long solution using manual
             // define the range
             int max = 3;
             int min = 1;
@@ -53,11 +59,6 @@ public class MathFunctions {
                 int rand = (int)(Math.random() * range) + min;
                 System.out.println("Rand " + rand); // Output is different everytime this code is executed
             }
-
-        // Random Class
-        int randomValue =  new Random().nextInt(10);
-        System.out.println("int randomValue =  new Random().nextInt(10) " + randomValue);
-
 
         // Meth.exp(double a)
         // returns Euler's number e raised to the power of a double value

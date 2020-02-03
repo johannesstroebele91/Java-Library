@@ -30,7 +30,7 @@ public class StringFunctions {
         // https://www.geeksforgeeks.org/java-string-contains-method-example/
         String links = "hello";
         String rechts = "hello world";
-        System.out.println(links.contains(rechts));
+        System.out.println( "links.contains(rechts)" + rechts.contains(links));
 
         // .replace() ' ' with '_'
         System.out.println( "rechts.replace(' ', '_') -> " + rechts);

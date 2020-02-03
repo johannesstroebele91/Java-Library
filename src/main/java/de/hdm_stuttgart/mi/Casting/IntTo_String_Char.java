@@ -1,6 +1,6 @@
 package de.hdm_stuttgart.mi.Casting;
 
-public class IntToString_Char {
+public class IntTo_String_Char {
 
     public static void main(String[] args) {
 

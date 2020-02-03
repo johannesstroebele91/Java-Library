@@ -15,7 +15,6 @@ public class Arr {
          * AND the order of the elements
          */
 
-
         // INITIALIZATION
         // 1) Way: short 1-step-assignment
         int[] numbers1 = {1,2,3};

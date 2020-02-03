@@ -4,6 +4,14 @@ public class Strings {
 
     public static void main(String[] args) {
 
+        // TODO: VERBERSSERN
+        String a = "hello";
+        String b = "welt";
+
+        System.out.println(a.compareTo("123 " + b.compareTo(a)));
+        System.out.println(a.compareTo("123 " + a.compareTo(b)));
+
+
         // 1) Comparing Strings created on the HEAP
         // String e = new String ("Hello"); -> zwingt, dass nicht im Pool, sondern im Heap erstellt wird!!!
         System.out.println("Comparing Strings created on the heap:");

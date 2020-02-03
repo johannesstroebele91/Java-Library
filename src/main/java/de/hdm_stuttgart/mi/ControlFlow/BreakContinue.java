@@ -13,7 +13,7 @@ public class BreakContinue {
             }
             System.out.println("   survived first guard");
             if (n == 4) {
-                break; // exits the loop
+                break; // exits the loop -> needed for switch case!!! or it would go through all possibilities!
             }
             System.out.println("   survived second guard");
             // continue at head of loop

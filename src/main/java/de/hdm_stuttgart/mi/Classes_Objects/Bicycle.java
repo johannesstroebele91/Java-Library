@@ -37,6 +37,13 @@ public class Bicycle {
 
     // 2-Args-Constructor (created automatically via Code -> Generate -> Constructor)
     public Bicycle(int gear, int speed, int cadence, int id) {
+
+        /* great == gear // compile error!
+         * assignment gear = gear will assign the constructor's argument gear to itself
+         * rather than assigning it to the instance variable gear being defined within class scope
+         *-> This scope conflict can be resolved using this!
+         */
+
         this.gear = gear;
         this.speed = speed;
         this.cadence = cadence;

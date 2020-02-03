@@ -1,4 +1,4 @@
-package de.hdm_stuttgart.mi.Operators;
+package de.hdm_stuttgart.mi.Modulo;
 
 public class Modulo {
 
