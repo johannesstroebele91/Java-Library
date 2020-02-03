@@ -1,4 +1,4 @@
-package de.hdm_stuttgart.mi;
+package de.hdm_stuttgart.mi.Formatting;
 
 public class Format_Decimal_Nachkommastellen {
 

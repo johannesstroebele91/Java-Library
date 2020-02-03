@@ -17,7 +17,6 @@ public class Print {
         System.out.println(-1 + 7); // adds the values together
         // System.out.println("hello", j); // Compile error
 
-
         // Escape special characters
         System.out.println( "\n"); // New line / line break
         System.out.println( "\t"); // Tab
