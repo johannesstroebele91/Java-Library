@@ -36,6 +36,7 @@ public class Functions {
 
         // Arrays.binarySearch() -> IMPORTANT, sort FIRST!
         Arrays.sort(names); // IMPORTANT! Array must be SORTED prior to do Arrays.binarySearch()
+
         // https://www.geeksforgeeks.org/arrays-binarysearch-java-examples-set-1/
         System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(intArr, 20));
         System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(intArr, 35));

@@ -1,5 +1,7 @@
 package de.hdm_stuttgart.mi.Strings;
 
+import java.util.Arrays;
+
 public class StringFunctions {
 
     public static void main(String[] args) {
@@ -69,5 +71,14 @@ public class StringFunctions {
         // 2) using charAt()
         String sFristLarge3 = name.toUpperCase().charAt(0) + name.substring(1);
         System.out.println(sFristLarge3);
+
+        // Binary search of Strings
+        String [] animalKinds = {"dog","cat", "hamster","snake","elephant"};
+        Arrays.sort(animalKinds);
+        System.out.println( "Arrays.sort(animalKinds) " + Arrays.toString(animalKinds)); // 1) The array needs to be SORTED before a binary search
+        System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(animalKinds, "hamsters")); // Output: -5 -> not found
+        System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(animalKinds, "hamste")); // Output: -4 -> not found
+        System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(animalKinds, "hamster")); // Output: 3
+        // Therefore, the key "hamster" is at the index 3
     }
 }

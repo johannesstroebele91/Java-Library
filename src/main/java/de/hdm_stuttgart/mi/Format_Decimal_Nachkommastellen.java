@@ -1,6 +1,6 @@
 package de.hdm_stuttgart.mi;
 
-public class DecimalFormat_Nachkommastellen {
+public class Format_Decimal_Nachkommastellen {
 
     public static void main(String[] args) {
 

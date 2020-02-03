@@ -34,19 +34,22 @@ public class Arr {
         // 4) Wrong Way:
         // C-style array declaration
         // also working but wrong syntax
-        int numbers4[] = {1,2,3};
+        int []numbers4 = {1,2,3};
 
-        /* ARRAY PARAMETER PASSING
-         1) Create an array of size 3 on the heap
-         2) Assign array reference to the array of size 3 on the heap
-         3)
-         */
-
+        // ARRAY PARAMETER PASSING
+        // 1) Create an array of size 3 on the heap
+        // 2) Assign array reference to the array of size 3 on the heap
         int [] lectures = new int [3];
         fill(lectures, 25);
         System.out.println("Second " + lectures[1] + " participant");
 
+        // Index VS Length
+        System.out.println(numbers1.length); // Output 3 (-> NOT 2 considering index)
+        // numbers1[numbers1.length] = 5; // WRONG! Index 3 out of bounds for length 3
+        // numbers1[3] = 5; // Also wrong see above
+        numbers1[2] = 5; // RIGHT
     }
+
     static private void fill(final int[] lectures, final int participants){
         // Array lectures on the heap gets filled with values
         for(int i = 0; i<lectures.length;i++)
