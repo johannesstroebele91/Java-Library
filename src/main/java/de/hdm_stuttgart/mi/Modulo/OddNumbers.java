@@ -1,6 +1,6 @@
 package de.hdm_stuttgart.mi.Modulo;
 
-public class Modulo_OddNumbers {
+public class OddNumbers {
 
     public static void main(String[] args) {
 

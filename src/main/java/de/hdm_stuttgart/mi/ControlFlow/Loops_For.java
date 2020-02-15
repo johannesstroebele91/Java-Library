@@ -4,7 +4,7 @@ public class Loops_For {
 
     public static void main(String[] args) {
 
-        // For
+        // For: positive
         // Warning: index starts at 0
         // length starts at 1
         String[] stringArray = new String[]{"hello", "world"};
@@ -12,7 +12,12 @@ public class Loops_For {
             System.out.println(stringArray[i]);
         }
 
-        // For-each:
+        // For: negative
+        for( int i = stringArray.length-1; i >= 0; i--) {
+            System.out.println( "stringArray[" + i + "]" + stringArray[i]);
+        }
+
+            // For-each:
         // Warning: VALUE! not Index
         System.out.println("\nFor-each?");
         for (String s : stringArray) {

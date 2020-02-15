@@ -2,7 +2,7 @@ package de.hdm_stuttgart.mi.Array;
 
 import java.util.Arrays;
 
-public class CopyArrayToOther {
+public class Old_CopyArrayToOther {
 
     public static void main(String[] args) {
 
@@ -18,6 +18,7 @@ public class CopyArrayToOther {
 
         System.out.println( "\naddArray(s, \"hello\")" + addArray(s, "hello").toString());
     }
+
     static private String[] addArray(String[] array, String a){
         if(array==null){
             return new String[]{a};

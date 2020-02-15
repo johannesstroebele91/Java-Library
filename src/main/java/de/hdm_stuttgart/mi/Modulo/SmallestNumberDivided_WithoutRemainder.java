@@ -1,4 +1,4 @@
-package de.hdm_stuttgart.mi.WichtigeUebungen;
+package de.hdm_stuttgart.mi.Modulo;
 
 public class SmallestNumberDivided_WithoutRemainder {
 

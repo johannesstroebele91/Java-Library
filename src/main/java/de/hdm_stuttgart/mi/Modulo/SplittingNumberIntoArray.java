@@ -2,7 +2,7 @@ package de.hdm_stuttgart.mi.Modulo;
 
 import java.util.Arrays;
 
-public class Modulo_SplittingNumberIntoArray {
+public class SplittingNumberIntoArray {
 
     public static void main(String[] args) {
 

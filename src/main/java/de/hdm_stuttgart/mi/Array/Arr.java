@@ -55,6 +55,9 @@ public class Arr {
         System.out.println(Arrays.toString( new int[] {1,2,4} ));
         System.out.println(Arrays.toString( change( new int[] {1,2,4,5,3} )));
 
+        // Return empty array
+        // return new int[]{};
+        // return new int[0]
     }
 
     static private void fill(final int[] lectures, final int participants){

@@ -28,6 +28,9 @@ public class Strings {
         String s2 = new String ("World");
         String s3 = new String ("World");
 
+        // Return empty String[]
+        // return new String[]{};
+        // new String[0]
 
     }
 }

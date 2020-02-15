@@ -9,7 +9,7 @@ public class StringFunctions {
         // .indexOf()
         // Find out where certain parts of words are
         String name = "Luisa";
-        System.out.println(name.indexOf("is"));
+        System.out.println( "name.indexOf(\"is\") " + name.indexOf("is"));
 
         // .chartAt()
         // get single letter at a certain position
@@ -61,16 +61,11 @@ public class StringFunctions {
         // Make letters lower or upper case
         System.out.println(name.toUpperCase() );
 
-        // Make first letter of both words upper case
-        // 1) using substring()
-        String sFirstLarge1 = name.substring(0, 1).toUpperCase() + name.substring(1);
-        System.out.println(sFirstLarge1);
-        String sFirstLarge2 = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
-        System.out.println(sFirstLarge2);
-
-        // 2) using charAt()
-        String sFristLarge3 = name.toUpperCase().charAt(0) + name.substring(1);
-        System.out.println(sFristLarge3);
+        // substring()
+        // Cuts out the specified string, whereby the 2. paramter is EXCLUSIVE! -> e.g. 0,3 -> index 0 bis index 2
+        System.out.println( "name.substring(0,3) " + name.substring(0,3));
+        // Only gets string starting from index 2 INCLUSIVELY!
+        System.out.println( "name.substring(2) " + name.substring(2));
 
         // Binary search of Strings
         String [] animalKinds = {"dog","cat", "hamster","snake","elephant"};
@@ -80,5 +75,28 @@ public class StringFunctions {
         System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(animalKinds, "hamste")); // Output: -4 -> not found
         System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(animalKinds, "hamster")); // Output: 3
         // Therefore, the key "hamster" is at the index 3
+
+        // compareTo()
+        String s1 = "geeksforgeeks";
+        String s2 = new String("geeksforgeeks");
+        String s3 = new String("asthae");
+        String s4 = new String("geeksfor");
+        String s5 = new String("geeksforgeeksfor");
+
+        System.out.print("Difference of geeksforgeeks(obj) and geeksforgeeks(str) : ");
+        System.out.println(s1.compareTo(s2)); // Output: 0 -> equals 0 if the argument is a string lexicographically "s2" equal to this string;
+        System.out.print("Difference of geeksforgeeks(str) and astha(obj): ");
+        System.out.println(s1.compareTo(s3)); Output: // Output: 6 -> greater than 0 if the argument is a string lexicographically "s3" less than this string
+        System.out.print("Difference of geeksforgeeks(obj) and geeksfor(str) : ");
+        System.out.println(s1.compareTo(s4)); // Output:  5 -> greater than 0 if the argument is a string lexicographically "s4" less than this string
+        System.out.print("Difference of geeksforgeeks(obj) and geeksforgeeksfor(str) : ");
+        System.out.println(s1.compareTo(s5)); // Output: -3 -> less than 0 if the argument is a string lexicographically "s5" greater than this string
+
+        String a = new String("4");
+        String b = new String("4");
+        String c = new String("1");
+        System.out.println(a.compareTo(b)); // Output: 0
+        System.out.println(a.compareTo(c)); // Output: 3 -> greater than 0 if the argument is a string "c" lexicographically less than this string
+        System.out.println(c.compareTo(a)); // Output: -3 -> less than 0 if the argument is a string "a" lexicographically greater than this string
     }
 }

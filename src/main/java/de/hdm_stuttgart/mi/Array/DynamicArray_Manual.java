@@ -13,16 +13,32 @@ public class DynamicArray_Manual {
 
         // 1) Solution: manual with Arrays.copyOf()
         final String newMember1 = "Ernest";
-        String[] membersNew = add(members, newMember1);
-        System.out.println("Members afterwards " + Arrays.toString(membersNew));
+        String[] membersNewCopyOf = add(members, newMember1);
+        System.out.println("Members afterwards with copyOf() " + Arrays.toString(membersNewCopyOf));
 
         // 2) Solution: completely manual
         final String newMember2 = "Lena";
-        String[] membersNewest = append(members, newMember2);
-        System.out.println("Members afterwards " + Arrays.toString(membersNew));
+        String[] membersNewManual = append(members, newMember2);
+        System.out.println("Members afterwards with manual " + Arrays.toString(membersNewManual));
+
+        // Continuously enlarge array based on condition
+        int[] result = {};
+        for (int i = members.length-1; i >= 0; i--) {
+            System.out.println( "i " + i);
+            result = add(result, i);
+            System.out.println("Members while for loop " + Arrays.toString(result));
+        }
+        System.out.println("Members afterwards with for loop " + Arrays.toString(result));
     }
 
-    // 1) Method for solution: manual with Arrays.copyOf()
+    // 1) String Method for solution: manual with Arrays.copyOf()
+    static int[] add (final int[] values, final int newValue) {
+        final int[] copy = Arrays.copyOf(values, values.length + 1);
+        copy[values.length] = newValue;
+        return copy;
+    }
+
+    // 1) Int Method for solution: manual with Arrays.copyOf()
     static String[] add (final String[] values, final String newValue) {
         final String[] copy = Arrays.copyOf(values, values.length + 1);
         copy[values.length] = newValue;
