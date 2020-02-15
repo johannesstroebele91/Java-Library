@@ -44,7 +44,7 @@ public class Loops_For {
 
         // Example: Duplicates (Exam SE1)
         // Better readability: Use row and column in favour of i and j
-        System.out.println("\nAre there dubplicates?");
+        System.out.println("\nAre there duplicates?");
         boolean duplikate = false;
         for (int row = 0; row < werte.length; row++) {
             for (int column = 0; column < werte.length; column++){
@@ -61,7 +61,7 @@ public class Loops_For {
 
         // Example: print only even numbers
         System.out.println("\nprint only even numbers");
-        for (int i = 0; i <werte.length; i++) {
+        for (int i = 0; i < werte.length; i++) {
             if (werte[i] % 2 == 0)
                 System.out.println(werte[i]);
         }

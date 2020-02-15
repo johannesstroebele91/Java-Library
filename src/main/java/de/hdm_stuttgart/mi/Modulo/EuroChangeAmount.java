@@ -28,9 +28,6 @@ public class EuroChangeAmount {
         }
     }
 
-
-
-
     public enum Coin {
 
         /**

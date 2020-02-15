@@ -68,6 +68,7 @@ public class StringFunctions {
         System.out.println( "name.substring(2) " + name.substring(2));
 
         // Binary search of Strings
+        // Arrays.binarySearch( String[], searchedKey )
         String [] animalKinds = {"dog","cat", "hamster","snake","elephant"};
         Arrays.sort(animalKinds);
         System.out.println( "Arrays.sort(animalKinds) " + Arrays.toString(animalKinds)); // 1) The array needs to be SORTED before a binary search
@@ -76,7 +77,13 @@ public class StringFunctions {
         System.out.println("Arrays.binarySearch: " + Arrays.binarySearch(animalKinds, "hamster")); // Output: 3
         // Therefore, the key "hamster" is at the index 3
 
-        // compareTo()
+        // .replace(char, char)
+        String s = "mesquite in your cellar";
+        System.out.println( "String before: " + s);
+        s.replace('e', 'o');
+        System.out.println( "String after s.replace('e','o'): " + s);
+
+        // .compareTo()
         String s1 = "geeksforgeeks";
         String s2 = new String("geeksforgeeks");
         String s3 = new String("asthae");
