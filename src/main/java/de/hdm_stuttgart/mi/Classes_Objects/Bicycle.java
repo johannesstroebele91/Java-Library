@@ -35,6 +35,7 @@ public class Bicycle {
     // No-Args-Constructor
     public Bicycle() {}
 
+    // NEEDS TO BE PUBLIC!!!!
     // 2-Args-Constructor (created automatically via Code -> Generate -> Constructor)
     public Bicycle(int gear, int speed, int cadence, int id) {
 

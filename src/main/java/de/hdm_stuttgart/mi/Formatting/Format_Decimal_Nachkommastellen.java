@@ -6,14 +6,17 @@ public class Format_Decimal_Nachkommastellen {
 
         // https://stackoverflow.com/questions/433958/java-decimal-string-format
 
-        // Wenn ich WENIGER Nachkommastellen möchte -> 2 hier
+        // 2 Nachkommastellen -> 2f
         double d = 10.0 / 3.0;
         String result = String.format("%.2f", d);
-        System.out.println(result);
+        System.out.println(result); // Output: 3.33
 
-        // Wenn ich MEHR Nachkommastellen möchte -> 3 hier
+        // 3 Nachkommastellen -> 3f
         result = String.format("%.3f", 2.5);
-        System.out.println(result);
+        System.out.println(result); // Output: 2.500
 
+        // Cents to Euro
+        int preis = 48291; // Cents
+        System.out.println(String.format("%.2f", (double)preis/100));
     }
 }
