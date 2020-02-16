@@ -17,21 +17,50 @@ public class SwitchCase {
                 System.out.println("no number");
         }
 
+        // Case multiple values
+        String wochentag = "Montag";
+        int stundenLohn = 0;
+
+        switch(wochentag) {
+            case "Montag":
+            case "Dienstag":
+            case "Mittwoch":
+            case "Donnerstag":
+            case "Freitag":
+                stundenLohn = 15;
+            case "Samstag":
+            case "Sonntag":
+                stundenLohn = 25;
+        }
+
+        // Text in switch case
         String month = "April";
         String season = "";
         // Multiple cases
-        switch(month) {
-            case "March": case "April": case "May":
-                season = "Spring"; break;
+        switch (month) {
+            case "March":
+            case "April":
+            case "May":
+                season = "Spring";
+                break;
 
-            case "June": case "July": case "August":
-                season = "Summer"; break;
+            case "June":
+            case "July":
+            case "August":
+                season = "Summer";
+                break;
 
-            case "September": case "October": case "November":
-                season = "Autumn"; break;
+            case "September":
+            case "October":
+            case "November":
+                season = "Autumn";
+                break;
 
-            case "December": case "January": case "February":
-                season = "Winter"; break;
+            case "December":
+            case "January":
+            case "February":
+                season = "Winter";
+                break;
         }
     }
 }
