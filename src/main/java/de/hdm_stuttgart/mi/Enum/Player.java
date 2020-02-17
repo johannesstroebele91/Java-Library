@@ -1,6 +1,6 @@
 package de.hdm_stuttgart.mi.Enum;
-// Enum, not class!
 
+// Enum, not class!
 public enum Player {
 
     // Defining enums
@@ -10,7 +10,7 @@ public enum Player {
     public final String nickname;
     public final char representation;
 
-    // Constructor
+    // Constructor: setting values of enums
     Player(final String nickname, final char representation) {
         this.nickname = nickname;
         this.representation = representation;
