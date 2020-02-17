@@ -1,5 +1,7 @@
 package de.hdm_stuttgart.mi.DataTypes;
 
+import java.util.Arrays;
+
 public class PrimitiveTypes {
 
     public boolean height;
@@ -37,6 +39,7 @@ public class PrimitiveTypes {
         // int: 4 byte
         // [−2^31,2^(31)−1]
         // Signed integer
+        System.out.println( "Length of an int with String.valueOf(a).length(): " + String.valueOf(a).length());
         System.out.println(Integer.TYPE);
         System.out.println(Integer.BYTES + " / " + Integer.SIZE);
         System.out.println(Integer.MIN_VALUE);
