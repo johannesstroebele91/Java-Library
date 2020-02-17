@@ -8,8 +8,10 @@ public class StringFunctions {
 
         // .indexOf()
         // Find out where certain parts of words are
+        // In Luisa, the string "is" is at the index 2
         String name = "Luisa";
-        System.out.println( "name.indexOf(\"is\") " + name.indexOf("is"));
+        System.out.println( "name.indexOf(\"is\") " + name.indexOf("is")); // Output: 2 -> positive if contained
+        System.out.println( "name.indexOf(\"fsdjk\") " + name.indexOf("fsdjk")); // Output: -1 -> negative if not contained
 
         // .chartAt()
         // get single letter at a certain position
