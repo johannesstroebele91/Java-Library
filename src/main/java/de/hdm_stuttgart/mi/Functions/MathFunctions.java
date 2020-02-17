@@ -37,6 +37,9 @@ public class MathFunctions {
 
         // Math.pow -> hoch
         System.out.println("Math.pow(a, a) " + Math.pow(a, a));
+        for (int i = 0; i < 5; i++) {
+            System.out.println( "Math.pow(10, " + i + ") "+ (int) Math.pow(10, i));
+        }
 
         // Math.sqrt () -> wurzel
         System.out.println( "Math.sqrt(a) " + Math.sqrt(a) );
