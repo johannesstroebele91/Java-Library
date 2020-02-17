@@ -6,8 +6,11 @@ public class SwitchElementPositions {
 
     public static void main(String[] args) {
         int[] arr = {2, 1, 10, 3, 4};
+        int[] arr2 = {23, 1, 10, 3, 4, 43, 2};
 
         System.out.println( "Sort array: " + Arrays.toString(switchPosition(arr)));
+        System.out.println( "Sort array: " + Arrays.toString(switchPosition(arr2)));
+
     }
 
     static private int[] switchPosition(int[] arr) {

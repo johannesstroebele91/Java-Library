@@ -15,11 +15,23 @@ public class PrimitiveTypes {
 
         // Initilization statement
         int c = 32;
+        char d = 'a';
+        String name = "John";
 
         // Variable name & Literal (e.g. 123, 32.30, "hello", 'A', true)
         a = 123; // Literal: 123, 32.30, "hello", 'A', true
 
 
+        // PRIMITIVE TYPE FUNCTIONS
+        // Length of a number: String.valueOf(a).length()
+        System.out.println( "Length of an int with String.valueOf(a).length(): " + String.valueOf(a).length());
+        // Character toUpperCase
+        System.out.println( "Character.toUpperCase() " + Character.toUpperCase(d) );
+        // Is character whitespace: Character.isWhitespace()
+        System.out.println( "Is character whitespace: " + Character.isWhitespace(' '));
+
+
+        // PRIMITIVE TYPE STATS
         // byte: 1 byte
         // [−2^7,2^(7)−1]
         // Signed integer
@@ -39,7 +51,6 @@ public class PrimitiveTypes {
         // int: 4 byte
         // [−2^31,2^(31)−1]
         // Signed integer
-        System.out.println( "Length of an int with String.valueOf(a).length(): " + String.valueOf(a).length());
         System.out.println(Integer.TYPE);
         System.out.println(Integer.BYTES + " / " + Integer.SIZE);
         System.out.println(Integer.MIN_VALUE);
