@@ -21,16 +21,23 @@ public class SwitchCase {
         String wochentag = "Montag";
         int stundenLohn = 0;
 
-        switch(wochentag) {
+        switch (wochentag) {
+
             case "Montag":
             case "Dienstag":
             case "Mittwoch":
             case "Donnerstag":
             case "Freitag":
                 stundenLohn = 15;
+                break;
+
             case "Samstag":
             case "Sonntag":
-                stundenLohn = 25;
+                stundenLohn = 20;
+                break;
+
+            default:
+                stundenLohn = 0;
         }
 
         // Text in switch case
