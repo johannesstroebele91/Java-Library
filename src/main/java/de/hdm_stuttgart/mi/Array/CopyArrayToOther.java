@@ -2,7 +2,7 @@ package de.hdm_stuttgart.mi.Array;
 
 import java.util.Arrays;
 
-public class Old_CopyArrayToOther {
+public class CopyArrayToOther {
 
     public static void main(String[] args) {
 

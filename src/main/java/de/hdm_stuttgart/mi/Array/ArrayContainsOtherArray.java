@@ -1,4 +1,4 @@
-package de.hdm_stuttgart.mi.WichtigeUebungen;
+package de.hdm_stuttgart.mi.Array;
 
 import java.util.Arrays;
 

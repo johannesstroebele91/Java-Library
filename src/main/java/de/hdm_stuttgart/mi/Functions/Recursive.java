@@ -25,5 +25,7 @@ public class Recursive {
     }
 
     // Short solution
-    static private long factorialShort(int n) { return 0 == n ? 1: n * factorialShort(n - 1);}
+    static private long factorialShort(int n) {
+        return 0 == n ? 1: n * factorialShort(n - 1);
+    }
 }

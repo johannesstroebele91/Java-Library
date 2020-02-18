@@ -18,7 +18,6 @@ abstract public class FitnessCostRates_Calculator {
         MIXED(150, 5),
         YEARLYFLAT(800, 0);
 
-
         // Constructor: setting values of enums
         FitnessCostRates(int costYearly, int costsPerVisit) {
             this.costsYearly = costYearly;

@@ -4,7 +4,16 @@ public class Format_Decimal_Nachkommastellen {
 
     public static void main(String[] args) {
 
+        // .format("%2f", double)
+        // Does NOT move the "." to the left, but to the right -> 48291 -> 48291.00!!! -> NOT 482.91!!!
         // https://stackoverflow.com/questions/433958/java-decimal-string-format
+
+        // Wrong: Cents to Euro
+        int preis = 48291; // Cents
+        System.out.println(String.format("%.2f", (double)preis/100)); // Output: 48291.00
+
+        // RIGHT: Cents to Euro
+        System.out.println(String.format("%.2f", (double)preis/100)); // Output: 482.91
 
         // 2 Nachkommastellen -> 2f
         double d = 10.0 / 3.0;
@@ -15,8 +24,5 @@ public class Format_Decimal_Nachkommastellen {
         result = String.format("%.3f", 2.5);
         System.out.println(result); // Output: 2.500
 
-        // Cents to Euro
-        int preis = 48291; // Cents
-        System.out.println(String.format("%.2f", (double)preis/100));
     }
 }

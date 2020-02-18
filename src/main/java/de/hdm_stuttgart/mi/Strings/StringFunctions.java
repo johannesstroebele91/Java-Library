@@ -6,12 +6,19 @@ public class StringFunctions {
 
     public static void main(String[] args) {
 
-        // .indexOf()
+        // .indexOf( String)
         // Find out where certain parts of words are
         // In Luisa, the string "is" is at the index 2
         String name = "Luisa";
         System.out.println( "name.indexOf(\"is\") " + name.indexOf("is")); // Output: 2 -> positive if contained
         System.out.println( "name.indexOf(\"fsdjk\") " + name.indexOf("fsdjk")); // Output: -1 -> negative if not contained
+
+        // .indexOf( otherString, int)
+        // searches in the String at the given fromIndex inclusively for the otherString
+        System.out.println( "name.indexOf(\"is\") " + name.indexOf("is", 0)); // Output: 2 -> positive if contained
+        System.out.println( "name.indexOf(\"is\") " + name.indexOf("is", 1)); // Output: 2 -> positive if contained
+        System.out.println( "name.indexOf(\"is\") " + name.indexOf("is", 2)); // Output: 2 -> positive if contained
+        System.out.println( "name.indexOf(\"is\") " + name.indexOf("is", 3)); // Output: 2 -> positive if contained
 
         // .chartAt()
         // get single letter at a certain position
@@ -23,6 +30,7 @@ public class StringFunctions {
         System.out.println(name.concat(" Müller"));
 
         // .split()
+        // Split a String into an array of String based on keyword and the limit of resulting strings starting from 1
         String str = "geekss@for@geekss";
         String[] arrOfStr1 = str.split("@", 2);
         System.out.println(arrOfStr1[0] + " " + arrOfStr1[1]); // index 2 is out of bounds, because only 2 words splitted
@@ -31,7 +39,7 @@ public class StringFunctions {
         System.out.println(arrOfStr2[0] + " " + arrOfStr2[1] + " " + arrOfStr2[2]); // index 3 is out of bounds, because only 3 words splitted
 
         // .contain()
-        // https://www.geeksforgeeks.org/java-string-contains-method-example/
+        // gives back true or false
         String links = "hello";
         String rechts = "hello world";
         System.out.println( "links.contains(rechts)" + rechts.contains(links));
@@ -40,24 +48,15 @@ public class StringFunctions {
         System.out.println( "rechts.replace(' ', '_') -> " + rechts);
         rechts = rechts.replace(' ', '_');
         System.out.println( "rechts.replace(' ', '_') -> " + rechts);
-        // String.format
-        double d = 4.298238;
-        System.out.println( "String.format(\"%.2f\", c)" + String.format("%.2f", d)); // nur Format
-        System.out.println( "String.format(\"%.3f\", c)" + String.format("%.3f", d)); // nur Format
 
-        // Leerzeichen finden
-        String input = "Ein schöner warmer Sommer steht an";
-        if (input == null)
-            System.out.println("return null");
-        else {
-            final char[] copy = input.toCharArray();
-
-            for(int i = 0; i<copy.length; i++){
-                if(copy[i] ==' ')
-                    copy[i+1] = Character.toLowerCase(copy[i+1]);
-            }
-            System.out.println("new String(copy)"); // alt. copy.toString()
-        }
+        // .format("%2f", double)
+        int preis = 48291; // Cents
+        // Does NOT move the "." to the left, but to the right -> 48291 -> 48291.00!!! -> NOT 482.91!!!
+        // https://stackoverflow.com/questions/433958/java-decimal-string-format
+        // Wrong: Cents to Euro
+        System.out.println(String.format("%.2f", (double)preis/100)); // Output: 48291.00
+        // RIGHT: Cents to Euro
+        System.out.println(String.format("%.2f", (double)preis/100)); // Output: 482.91
 
         // .toUpperCase / .toLowerCase
         // Make letters lower or upper case
